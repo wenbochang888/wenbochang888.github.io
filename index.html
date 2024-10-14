@@ -3,124 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张三的简历</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #3498db;
-            color: white;
-            text-align: center;
-            padding: 1em;
-            margin-bottom: 1em;
-        }
-        h1 {
-            margin: 0;
-        }
-        h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 0.5em;
-        }
-        .contact-info {
-            background-color: #ecf0f1;
-            padding: 1em;
-            margin-bottom: 1em;
-            border-radius: 5px;
-        }
-        .section {
-            margin-bottom: 2em;
-        }
-        .job {
-            margin-bottom: 1em;
-        }
-        .job h3 {
-            margin-bottom: 0.5em;
-        }
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        .skill {
-            background-color: #3498db;
-            color: white;
-            padding: 5px 10px;
-            border-radius: 5px;
-            font-size: 0.9em;
-        }
-        @media (max-width: 600px) {
-            body {
-                padding: 10px;
-            }
-            header {
-                padding: 0.5em;
-            }
-        }
-    </style>
+    <title>xxx的简历</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>张三的简历</h1>
-    </header>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 offset-lg-2">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <header class="text-center mb-4">
+                            <h1 class="display-4 fw-bold text-primary">常文博</h1>
+                            <div class="contact-info">
+                                <p><i class="bi bi-envelope"></i> changwenbo141@163.com | <i class="bi bi-phone"></i> xxx-xxxx-xxxx</p>
+                                <p>
+                                    <a href="http://www.cnblogs.com/wenbochang" target="_blank" class="me-2"><i class="bi bi-globe"></i> 博客</a>
+                                    <a href="https://github.com/wenbochang888" target="_blank" class="me-2"><i class="bi bi-github"></i> GitHub</a>
+                                    <a href="https://leetcode.cn/u/bigegg" target="_blank"><i class="bi bi-code-slash"></i> LeetCode</a>
+                                </p>
+                            </div>
+                        </header>
 
-    <main>
-        <section class="contact-info">
-            <p>邮箱：zhangsan@example.com | 电话：123-456-7890 | 地址：北京市朝阳区</p>
-        </section>
+                        <section class="mb-4">
+                            <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-mortarboard me-2"></i>教育经历</h2>
+                            <p><strong>广东财经大学</strong> - 计算机科学与技术 | 2015~2019（本科）</p>
+                        </section>
 
-        <section class="section">
-            <h2>个人简介</h2>
-            <p>我是一名经验丰富的软件工程师，专注于前端开发。我热衷于创建用户友好的web应用，并且在团队协作中表现出色。</p>
-        </section>
+                        <section class="mb-4">
+                            <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-briefcase me-2"></i>工作经历</h2>
+                            <div class="job mb-3">
+                                <h3 class="h5 fw-bold">信贷业务主负责人 - 货拉拉</h3>
+                                <p class="text-muted">2023年5月 - 至今（1年左右，宝马绩效）</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>主要负责货拉拉信贷业务线，整体把控信贷业务方向</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>与产品沟通需求、排期、进展等</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>信贷业务日常的需求评审、技术建设，系分、codereview、showcase等</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>业务需求的支持，如小贷接入马上消费新资方，营销活动的玩法，支持一次性、循环额度等</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>稳定性治理，主要梳理小贷核心链路，进行监控报警的治理，资损防控等</li>
+                                </ul>
+                            </div>
+                            <div class="job mb-3">
+                                <h3 class="h5 fw-bold">后端开发工程师 - 小米金融</h3>
+                                <p class="text-muted">2019年6月 - 2023年5月（4年左右，3次A绩效，1次B+绩效）</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>主要负责小米钱包支付业务，收银台系统的日常需求开发</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>完善用户体验、迭代营销需求以提高用户转化率</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>持续排查与调优慢SQL，完善报警与监控等</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>完善沉淀相关技术文档，整理代码规范等</li>
+                                </ul>
+                            </div>
+                            <div class="job mb-3">
+                                <h3 class="h5 fw-bold">实习生 - 腾讯</h3>
+                                <p class="text-muted">2018年7月 - 2018年9月</p>
+                                <p>负责支付反洗钱相关的工作</p>
+                            </div>
+                        </section>
 
-        <section class="section">
-            <h2>工作经历</h2>
-            <div class="job">
-                <h3>高级前端开发工程师 - ABC科技有限公司</h3>
-                <p>2018年6月 - 至今</p>
-                <ul>
-                    <li>负责公司核心产品的前端开发和优化</li>
-                    <li>带领5人团队完成多个重要项目</li>
-                    <li>实现了页面加载速度提升30%的性能优化</li>
-                </ul>
+                        <section class="mb-4">
+                            <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-tools me-2"></i>专业能力</h2>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>货拉拉信贷产品层业务线负责人，整体把控业务方向。有良好的业务分析能力，沟通合作能力，项目管理能力</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>负责3个人的小团队。有强烈的责任心以及owner意识。日常除了业务需求的支持，也会做一些需求分配，需求排期，技术评审，codereview等工作</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>具备互联网金融支付，信贷相关领域的经验，能快速理解支付、信贷、金融等相关业务</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>具备扎实的JAVA基础，数据结构和算法。掌握集合，并发编程等相关知识</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>熟悉JVM内存模型，并发，线程池。在工作实践中有所运用，有丰富的线上问题排查与调优经验</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>熟悉MySQL底层原理。在工作中对慢查询有所实践</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>熟悉Redis。如底层数据结构，持久化，过期策略等等</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>了解Linux。对Linux常用的命令，工具等有所使用</li>
+                                <li><i class="bi bi-star-fill text-warning me-2"></i>了解设计模式。对代码规范，重构等有所了解，有良好的编程习惯</li>
+                            </ul>
+                        </section>
+
+                        <section class="mb-4">
+                            <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-laptop me-2"></i>项目经历</h2>
+                            <div class="accordion" id="projectAccordion">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                            试算接口的迁移重构 (小米金融)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>项目背景：</strong> 从0到1完成了mipay-web重构项目。其中试算接口从原本8000+TPS，优化到了现在的17000+TPS，同比增长了110%。同时最大程度的保障了代码的整洁性、可复用性以及扩展性。更好的提高了商户的体验，成功经历了例如双11等大促的考验。</p>
+                                            <p><strong>技术点以及难点：</strong></p>
+                                            <ul>
+                                                <li>重构技术选型方面，最终确定将项目整体迁移至springboot webflux技术栈</li>
+                                                <li>采用的技术手段主要包括减少数据库的访问，合理的使用索引，部分方法添加本地缓存，调整垃圾收集器，精简日志，优化业务代码等等</li>
+                                                <li>利用流量回放，多线程对账等保证新接口与旧接口完全一致，对商户无感</li>
+                                                <li>利用Sentinel对接口进行限流、降级，保护系统，提升用户体验</li>
+                                                <li>防止用户通过代码直接请求试算接口，增加压力，对接口进行了防重放攻击处理</li>
+                                                <li>提前预警，接入falcon等报警打点系统，对报警进行细化</li>
+                                                <li>利用nginx进行灰度切流，保证系统稳定性</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                            小米钱包信用卡分期 (小米金融)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>项目背景：</strong> 在小米钱包新增信用卡分期支付方式，丰富了小米的支付方式。同时增加了免息、满减、随机立减等优惠，吸引用户使用小米钱包。在2022年双11期间，在小米商城共有5.8W信用卡新绑卡用户，支付占比从原来的10%提升到了16%，新增优惠类型的上线环比无活动时提升30%。上半年共完成约40W笔，涉及金额9亿元。</p>
+                                            <p><strong>技术点以及难点：</strong></p>
+                                            <ul>
+                                                <li>整个支付的架构是一个微服务。收银台是位于所有服务的最前端，与用户直接进行交互的系统</li>
+                                                <li>为了保证大促服务的稳定性，在不同机房部署了多台机器</li>
+                                                <li>对第三方依赖服务进行了梳理，做到自动降级，日常演练，保证业务核心流程</li>
+                                                <li>优化了Redis的双读双写操作，提高了缓存的高可用性</li>
+                                                <li>新增了多种优惠类型，如满减优惠券的叠加，随机立减，特定人群营销，f会员，up会员等</li>
+                                                <li>抽取了公共代码先对分期功能进行重构，降低了测试成本</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                            圆易借-马上消费新资方接入 (货拉拉)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>项目背景：</strong> 为提高用户授信通过率，增加信贷的收入，同时获取马上消费大量的低成本的资金，保障业务侧资金的供给。接入马上消费为圆易借新资方。马上消金上线后授信通过率为10%，小贷产品整体授信通过率提升约4%。以4月份进件日均1000笔来计算，接入马上消金之后，每月增加放款额535万/月，对应增加收入11万/月。</p>
+                                            
+                                            <p><strong>技术点以及主要成绩：</strong></p>
+                                            <ul>
+                                                <li>项目需求owner，制定标准化的流程，协调组员以及其他后端、前端、测试、产品、外部资方等沟通协作</li>
+                                                <li>引入策略模式，解决因渠道差异带来代码上的ifelse分支判断问题</li>
+                                                <li>形成货拉拉标准对接三方文档，将贷前进件、贷中用信、贷后还款相关流程接口标准化，缩短对接新资方的时间从2个月降低为2周每人</li>
+                                                <li>使用CompletableFuture优化模块，对获取订单信息、资方信息、额度详情等异步RPC调用进行编排，响应时间从2s降低为1.2s</li>
+                                                <li>有计划的有节奏的灰度上线，保证系统稳定性</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                            营销-用信抽奖返现 (货拉拉)
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#projectAccordion">
+                                        <div class="accordion-body">
+                                            <p><strong>项目背景：</strong> 为提高用户的用信意愿，对特定的符合条件的用户进行营销，通过随机抽奖的形式吸引其用信进而提升用信率。</p>
+                                            <p><strong>技术点以及主要成绩：</strong></p>
+                                            <ul>
+                                                <li>营销活动上线以后，符合条件的用户用信率提高了5.36%，实际放款GTV增加49W元每月</li>
+                                                <li>通过异步的方式进行削峰处理，防止奖品超发</li>
+                                                <li>引入ABTEST实验，观察单一变量对最终用信率的影响</li>
+                                                <li>接入集团stone触达平台，对用户进行活动的触达，包括站内信，端内外push，短信等</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="mb-4">
+                            <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-code-square me-2"></i>技能清单</h2>
+                            <div class="skills">
+                                <span class="badge bg-primary me-2 mb-2">Java</span>
+                                <span class="badge bg-primary me-2 mb-2">Spring Boot</span>
+                                <span class="badge bg-primary me-2 mb-2">MySQL</span>
+                                <span class="badge bg-primary me-2 mb-2">Redis</span>
+                                <span class="badge bg-primary me-2 mb-2">JVM</span>
+                                <span class="badge bg-primary me-2 mb-2">并发编程</span>
+                                <span class="badge bg-primary me-2 mb-2">微服务</span>
+                                <span class="badge bg-primary me-2 mb-2">Linux</span>
+                                <span class="badge bg-primary me-2 mb-2">设计模式</span>
+                                <span class="badge bg-primary me-2 mb-2">项目管理</span>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-            <div class="job">
-                <h3>前端开发工程师 - XYZ互联网公司</h3>
-                <p>2015年7月 - 2018年5月</p>
-                <ul>
-                    <li>参与多个Web应用项目的开发</li>
-                    <li>负责公司官网的重构和优化</li>
-                    <li>编写技术文档和培训新员工</li>
-                </ul>
-            </div>
-        </section>
+        </div>
+    </div>
 
-        <section class="section">
-            <h2>教育背景</h2>
-            <p>计算机科学学士学位 - 北京大学 (2011-2015)</p>
-        </section>
-
-        <section class="section">
-            <h2>技能</h2>
-            <div class="skills">
-                <span class="skill">JavaScript</span>
-                <span class="skill">React</span>
-                <span class="skill">Vue</span>
-                <span class="skill">Node.js</span>
-                <span class="skill">HTML5</span>
-                <span class="skill">CSS3</span>
-                <span class="skill">Webpack</span>
-                <span class="skill">Git</span>
-            </div>
-        </section>
-    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

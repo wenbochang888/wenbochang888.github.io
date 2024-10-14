@@ -1,2 +1,2 @@
-# wenbochang888.github.io
-https://wenbochang888.github.io/
+# 个人简历
+前端内容完全由 https://v0.dev/ 生成，感谢AI带来的生产力的提高

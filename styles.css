@@ -1,0 +1,67 @@
+body {
+    background-color: #f8f9fa;
+}
+
+.card {
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.contact-info a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+    color: #0056b3;
+}
+
+.job, .accordion-item {
+    transition: all 0.3s ease;
+}
+
+.job:hover, .accordion-item:hover {
+    background-color: #f8f9fa;
+}
+
+.skills .badge {
+    transition: all 0.3s ease;
+}
+
+.skills .badge:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #e7f1ff;
+    color: #0c63e4;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+.list-unstyled li {
+    margin-bottom: 0.5rem;
+}
+
+.text-primary {
+    color: #007bff !important;
+}
+
+.border-bottom {
+    border-color: #007bff !important;
+}
