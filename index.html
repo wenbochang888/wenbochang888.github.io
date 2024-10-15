@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>xxx的简历</title>
+    <title>常文博的简历</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
@@ -21,21 +21,21 @@
                                 <p>
                                     <a href="http://www.cnblogs.com/wenbochang" target="_blank" class="me-2"><i class="bi bi-globe"></i> 博客</a>
                                     <a href="https://github.com/wenbochang888" target="_blank" class="me-2"><i class="bi bi-github"></i> GitHub</a>
-                                    <a href="https://leetcode.cn/u/bigegg" target="_blank"><i class="bi bi-code-slash"></i> LeetCode</a>
+                                    <a href="https://www.douyin.com/user/MS4wLjABAAAAehjSUkqgxw_XlHrDo1z5m9fh0rxu2EAupPIwYwFRtJJCHBG77wAcMYc693FfNGFg" target="_blank"><i class="bi bi-tiktok"></i> douyin</a>
                                 </p>
                             </div>
                         </header>
 
                         <section class="mb-4">
                             <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-mortarboard me-2"></i>教育经历</h2>
-                            <p><strong>广东财经大学</strong> - 计算机科学与技术 | 2015~2019（本科）</p>
+                            <p>广东财经大学 - 计算机科学与技术 | 2015 ~ 2019（本科）</p>
                         </section>
 
                         <section class="mb-4">
                             <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-briefcase me-2"></i>工作经历</h2>
                             <div class="job mb-3">
                                 <h3 class="h5 fw-bold">信贷业务主负责人 - 货拉拉</h3>
-                                <p class="text-muted">2023年5月 - 至今（1年左右，宝马绩效）</p>
+                                <p class="text-muted">2023年5月 - 至今（2年左右，宝马绩效）</p>
                                 <ul class="list-unstyled">
                                     <li><i class="bi bi-check-circle-fill text-success me-2"></i>主要负责货拉拉信贷业务线，整体把控信贷业务方向</li>
                                     <li><i class="bi bi-check-circle-fill text-success me-2"></i>与产品沟通需求、排期、进展等</li>
@@ -81,11 +81,11 @@
                             <div class="accordion" id="projectAccordion">
                                 <div class="accordion-item">
                                     <h2 class="accordion-header" id="headingOne">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                             试算接口的迁移重构 (小米金融)
                                         </button>
                                     </h2>
-                                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#projectAccordion">
+                                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#projectAccordion">
                                         <div class="accordion-body">
                                             <p><strong>项目背景：</strong> 从0到1完成了mipay-web重构项目。其中试算接口从原本8000+TPS，优化到了现在的17000+TPS，同比增长了110%。同时最大程度的保障了代码的整洁性、可复用性以及扩展性。更好的提高了商户的体验，成功经历了例如双11等大促的考验。</p>
                                             <p><strong>技术点以及难点：</strong></p>
@@ -165,7 +165,7 @@
                             </div>
                         </section>
 
-                        <section class="mb-4">
+                        <!-- <section class="mb-4">
                             <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-code-square me-2"></i>技能清单</h2>
                             <div class="skills">
                                 <span class="badge bg-primary me-2 mb-2">Java</span>
@@ -179,12 +179,89 @@
                                 <span class="badge bg-primary me-2 mb-2">设计模式</span>
                                 <span class="badge bg-primary me-2 mb-2">项目管理</span>
                             </div>
+                        </section> -->
+
+                        <section class="mb-4" id="pinned-projects">
+                            <h2 class="h3 border-bottom pb-2 mb-3"><i class="bi bi-pin-angle-fill me-2"></i>业余-开源项目</h2>
+                            <div id="projects-container" style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between;"></div>
                         </section>
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    
+    <script>
+        const projects = [
+            {
+                title: "short-url",
+                description: "支持千万级别的短链生成",
+                language: "Java",
+                languageColor: "#b07219",
+                stars: 77,
+                forks: 9,
+                url: "https://github.com/wenbochang888/short-url"
+            },
+            {
+                title: "marketing",
+                description: "大厂员工，手把手教你开发一个高并发、高可用的营销活动",
+                language: "Java",
+                languageColor: "#b07219",
+                stars: 7,
+                forks: 1,
+                url: "https://github.com/wenbochang888/marketing"
+            },
+            {
+                title: "house",
+                description: "天涯爬虫项目",
+                language: "Python",
+                languageColor: "#b07219",
+                stars: "3.2k",
+                forks: 403,
+                url: "https://github.com/wenbochang888/house"
+            },
+            {
+                title: "TiebaSign",
+                description: "贴吧一键签到系统",
+                language: "Python",
+                languageColor: "#b07219",
+                stars: 10,
+                forks: 2,
+                url: "https://github.com/wenbochang888/TiebaSign"
+            }
+        ];
+    
+        function createProjectCard(project) {
+            return `
+                <div class="project-card">
+                    <div class="project-title">
+                        <a href="${project.url}" target="_blank" style="text-decoration: none;">${project.title}</a>
+                    </div>
+                    <div class="project-description">${project.description}</div>
+                    <div class="project-meta">
+                        <span>
+                            <span class="language-dot" style="background-color: ${project.languageColor};"></span>
+                            ${project.language}
+                        </span>
+                        <span>
+                            <i class="bi bi-star"></i> ${project.stars}
+                            <i class="bi bi-diagram-2 ml-2"></i> ${project.forks}
+                        </span>
+                    </div>
+                </div>
+            `;
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const container = document.getElementById('projects-container');
+            projects.forEach(project => {
+                container.innerHTML += createProjectCard(project);
+            });
+        });
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
